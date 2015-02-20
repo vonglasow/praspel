@@ -1,0 +1,17 @@
+{
+    "name": "vonglasow/praspel",
+    "description": "Project test for create example of Praspel",
+    "license": "BSD",
+    "authors": [
+        {
+            "name": "alexis von Glasow",
+            "email": "vonglasow@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "atoum/praspel-extension": "~0.0"
+    },
+    "autoload": {
+        "psr-0": {"Praspel\\": "src/"}
+    }
+}
