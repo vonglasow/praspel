@@ -4,7 +4,7 @@ $runner->setBootstrapFile(__DIR__ . '/.bootstrap.atoum.php')
 ;
 
 $coverageField = new atoum\report\fields\runner\coverage\html('Praspel', __DIR__ . '/tests/coverage');
-$coverageField->setRootUrl('http://127.0.0.1');
+$coverageField->setRootUrl('file://'.__DIR__.'/tests/coverage/index.html');
 
 $report = $script->addDefaultReport();
 $report->addField($coverageField);
