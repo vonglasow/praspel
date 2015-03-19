@@ -10,7 +10,7 @@ class Example
     private $number;
 
     /**
-     * @invariant world: array([0..1], 3);
+     * @invariant world: boundInteger(1, 3);
      */
     private $world;
 
