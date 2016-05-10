@@ -10,7 +10,10 @@ class Example extends atoum\test
     {
         $this->boolean(true);
 
-        foreach ($this->sampleMany($this->realdom->boundinteger(0), 1024) as $i) {
+        $int = $this->realdom->boundinteger(0);
+        $integers = $this->sampleMany($int, 1024);
+
+        foreach ($integers as $i) {
             $this->integer($i)->isGreaterThan(0);
         }
     }

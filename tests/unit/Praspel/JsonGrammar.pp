@@ -40,9 +40,6 @@
 // @license    New BSD License
 //
 
-
-%skip   space           \s
-
 %token  true            true
 %token  false           false
 %token  null            null
