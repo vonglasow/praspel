@@ -49,4 +49,17 @@ class Example extends atoum\test
                  ->isEqualTo(JSON_ERROR_NONE);
         }
     }
+
+    public function BProvider()
+    {
+        return $this->sample($this->realdom->boundInteger(0, 2000));
+    }
+
+    /**
+     * @dataProvider BProvider
+     */
+    public function testB($data)
+    {
+        $this->integer($data);
+    }
 }
